@@ -1,0 +1,51 @@
+/* styling navbar */
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 88%;
+    
+    background-color: black;
+    
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    padding:1vw 6vw;
+
+    z-index:1;
+
+
+  }
+  
+  .navbar_left{
+
+      display: flex;
+
+      align-items:center;
+  }
+
+  .navbar_left img{
+      height: 4vw;
+      object-fit: contain;
+      
+  }
+
+  .navbar_right{
+
+    width:40%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.navbar_right >a{
+    font-size:1.5vw;
+    color:white;
+    display:flex ;
+    align-items: center;
+}
+
+.navbar_right >a:hover{
+    color:var(--green);
+
+}

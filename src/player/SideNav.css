@@ -1,0 +1,10 @@
+.sideNav{
+    background-color: black;
+    flex:0.15;
+    color:white;
+}
+
+.sideNav img{
+    height:8vh;
+    object-fit: contain;
+}

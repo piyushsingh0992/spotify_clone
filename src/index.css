@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+:root {
+    --green:#1db954;
+    --grey:#b3b3b3;
+    --blue:#1D76DE;
+    --darkblue:#2D46BA;
+    --grey2:#535353;
+    --grey4:#EEEEEE;
+
+
+    --black:#000000;
+    --lightblack:#121212;
+  
+    --grey0:#222327;
+    --grey1:#212121;
+    
+    --background:#171718;
+    --box:#2e2f2f;
+  
+   
+    
+  
+    --white:#ffffff;
+    --cream:#F2B656;
+  
+    --pink:#CB1583 ;
+  
+    --skyblue:#A4FFEE;
+    
+    --darkblue:#2D46BA;
+    --greyblue:#9FC3D1;  
+  }
+
+@font-face {
+  src: url(./fonts/Gotham_Medium.otf);
+  font-family: spotify;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    font-family: spotify;
 }
+
+* {
+ margin:0;
+ padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+

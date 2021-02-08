@@ -1,0 +1,75 @@
+.ratecard{
+
+    height:35vw;
+    width:18vw;
+    padding:1vw;
+    display: grid;
+    grid-template-rows: 30% 60% 9%;
+
+
+    
+    box-shadow: 5px 10px 18px #888888;
+
+
+}
+
+.ratecard_top{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ratecard_top>button{
+    background-color: var(--blue);
+    color:white;
+    border-radius:5px;
+    border:0;
+
+    font-size:1.5vw;
+    padding: 0.5vw 1vw ;
+
+    width:70%;
+}
+
+.ratecard_top >h3{
+    font-size:2vw;
+
+}
+
+.ratecard_top>p{
+    font-size:1vw;
+    color:var(--grey2)
+}
+
+.ratecard_center{
+
+    margin-left:1.4vw;
+
+}
+
+.ratecard_center li{
+    font-size:1vw;
+    color:var(--grey2);
+    margin:1vw 0vw;
+}
+.ratecard_bottom{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.ratecard_bottom >button{
+    color:white;
+    background-color: black;
+    font-size:1vw;
+    padding:0.5vw 3vw;
+    border:1px solid black;
+    border-radius: 99px;
+}
+
+.ratecard_bottom >button:hover{
+    background-color: #888888;
+    transform: scale(1.1);
+}
