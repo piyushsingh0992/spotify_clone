@@ -7,8 +7,13 @@ import LibraryMusicIcon from "@material-ui/icons/LibraryMusic";
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LibraryAddIcon from '@material-ui/icons/LibraryAdd';
 
+import { useStateValue } from "../StateProvider";
+
 
 function SideNav() {
+
+    const [{ spotify ,playlists}, dispatch] = useStateValue();
+    console.log('playlists ->',playlists)
     return (
         <div className="sideNav">
             <img src ="./images/spotify-logo-white.png"/>
@@ -20,9 +25,11 @@ function SideNav() {
             <SideOption  Icon={FavoriteIcon} title="Create Playlist" />
             <SideOption  Icon={LibraryAddIcon} title="Liked Songs" />
             <br/>
-            <br/>
             <h3>PLAYLISTS</h3>
             <hr/>
+            {playlists?.items?.map((playlist) => (
+            <h5 className="sideNav_playlist">{playlist.name}</h5> 
+      ))}
         </div>
     )
 }

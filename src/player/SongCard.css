@@ -1,0 +1,53 @@
+.songCard{
+    height:240px;
+    background-color: grey;
+    padding:10px;
+    width:160px;
+
+    display: grid;
+    grid-template-rows: 150px 65px;
+    grid-gap:10px;
+    color:white;
+
+    
+}
+
+.songCard_img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songCard img{
+    height:150px;
+    object-fit: contain;
+}
+
+.songCard:hover img{
+    box-shadow:1px 1px 10px 1px black;
+}
+
+
+.songCard_playbutton{
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+    transform :translateY(20px);
+    opacity: 0;
+}
+
+
+.songCard:hover .songCard_playbutton{
+    transform :translateY(0px);
+    opacity: 1;
+    transition: all 0.2s ease-in;
+
+}
+
+.songCard_songdetails{
+    width:160px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

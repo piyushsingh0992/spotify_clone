@@ -1,0 +1,15 @@
+.songRow{
+    background-color: yellow;
+    padding:10px ;
+    display: flex;
+    align-items: center;
+}
+
+.songRow>h2{
+    margin-right: 10px;
+}
+.songRow >img{
+    height:50px;
+    object-fit: contain;
+    margin-right: 10px;
+}

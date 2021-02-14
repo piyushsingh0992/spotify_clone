@@ -1,0 +1,19 @@
+.sideOption{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:10px 0vw;
+    color:var(--grey4);
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.sideNavOption_icon{
+    padding:0vw 10px 0vw 15px;
+}
+
+.sideOption:hover{
+    background-color: grey;
+    color:white;  
+
+}

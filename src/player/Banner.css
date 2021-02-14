@@ -1,0 +1,25 @@
+.banner{
+    padding:10px;
+    display: flex;
+}
+
+.banner >img {
+    object-fit:contain;
+    height:220px;
+    margin-right:20px; 
+}
+
+.banner > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.banner > div >h1{
+    font-size:100px;
+}
+
+.banner > div >p{
+    font-size:25px;
+
+}

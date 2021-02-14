@@ -12,7 +12,6 @@ function Navbar() {
       };
     
       function scrollFunction() {
-          console.log(window.pageYOffset);
         if (window.pageYOffset > 20) {
           document.querySelector(".navbar").style.backgroundColor = "rgba(0,0,0,0.6)";
         } else {

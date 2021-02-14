@@ -1,12 +1,11 @@
 import React from 'react';
 import "./Body.css";
-import Header from "./Header.js"
 
+import Playlist from "./Playlist.js";
 function Body() {
     return (
         <div className="body">
-            <Header/>
-            <h1>Body</h1>
+            <Playlist/>
         </div>
     )
 }

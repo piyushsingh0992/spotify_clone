@@ -4,6 +4,8 @@ import Body from "./Body.js";
 import MusicPlayer from "./MusicPlayer.js";
 import "./Player.css"
 function Player() {
+
+    
     return (
         <div className="player">
         <div className="player_body">
@@ -11,7 +13,7 @@ function Player() {
             <Body/>
         </div>
 
-            
+          <MusicPlayer/>  
         </div>
     )
 }

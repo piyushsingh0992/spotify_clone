@@ -1,5 +1,6 @@
 import React from 'react';
 import "./HomePage.css";
+import { accessUrl } from "../spotify";
 
 
 function HomePage() {
@@ -8,7 +9,7 @@ function HomePage() {
             <div className="homepage_hero">
                 <div>
                 <h1>Go Premium. Be happy.</h1>
-                <a href="">START FREE TRIAL</a>
+                <a href={ accessUrl }>START FREE TRIAL</a>
                 </div>
             </div>
 
@@ -16,7 +17,7 @@ function HomePage() {
             <div className="homepage_webplayer">
                 <h1>Looking for music?</h1>
                 <p>Start listening to the best new releases.</p>
-                <a href="">LAUNCH WEB PLAYER</a>
+                <a href={ accessUrl }>LAUNCH WEB PLAYER</a>
 
                 <div className="homepage_webplayer_musicgrid">
                     <a href="" className="homepage_webplayer_song">

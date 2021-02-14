@@ -1,0 +1,41 @@
+.header{
+    position: sticky;
+    top:0;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header_left{
+    padding:7px 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 99px;
+    border:0px;
+    color:grey;
+
+    min-width:30px;
+    margin-right:5px;
+}
+
+.header_left>input{
+    border:0px;
+    padding:1px;
+}
+
+.header_right{
+    padding:5px 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 99px;
+    border:0px;
+    color:black
+}
+
+.header_right_icon{
+    margin-right: 10px;
+}
