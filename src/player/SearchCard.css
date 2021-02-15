@@ -1,5 +1,6 @@
 .searchCard{
-    background-color: blue;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color:rebeccapurple;
     height:170px;
     width: 170px;
     border-radius: 15px;
