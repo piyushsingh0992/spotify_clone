@@ -1,3 +1,22 @@
 .playlist{
-    background-color: pink;
+
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color: rgb(91, 87, 115);
+    color:white;
+}
+
+.playlist_body{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.playlist_icons{
+    display: flex;
+    align-items: center;
+    padding:5px 20px;
+    justify-content: space-between;
+    width:190px;
+}
+
+.playlist_songlist{
+    padding: 10px 20px;
 }

@@ -1,15 +1,46 @@
 .songRow{
-    background-color: yellow;
+    background-color: transparent;
     padding:10px ;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 40% 10%;
+    min-width: 500px;
 }
 
-.songRow>h2{
-    margin-right: 10px;
+.songRow p{
+    font-size:15px;
+    color:grey;
 }
-.songRow >img{
-    height:50px;
+
+.songRow_highlight{
+    color:white;
+    font-size:17px;
+
+}
+
+.songRow:hover{
+    background-color: rgba(128, 128, 128,0.3);
+}
+
+.songRow_left{
+    flex:0.5; 
+    display: flex;
+    align-items: center;
+
+}
+.songRow_img{
+    height:40px;
     object-fit: contain;
-    margin-right: 10px;
+    margin:0px  10px;
+}
+
+.songRow_center{
+    flex:0.25;
+    display: flex;
+
+}
+
+.songRow_right{
+    flex:0.25;
+    display: flex;
+
 }

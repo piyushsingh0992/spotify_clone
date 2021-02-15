@@ -1,0 +1,18 @@
+.search{
+    background-color: #121212;
+    color:white;
+    padding: 10px 0px 20px 0px;
+}
+
+.search >h1{
+    padding:15px 0px  40px 20px;
+}
+
+.search_grid{
+    display: grid;
+    grid-template-columns:170px 170px 170px 170px 170px ;
+    grid-auto-rows: 170px;
+    grid-gap:50px;
+    padding:10px 20px;
+    
+}

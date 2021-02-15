@@ -1,0 +1,34 @@
+.library{
+    padding:10px 0px;
+    background-color: #121212;
+}
+
+.library_firstrow_banner{
+    height:230px;
+    background-color: grey;
+    color: white;
+    padding:15px 20px;
+    width:360px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+.library_grid_first_row{
+    display: grid;
+    grid-template-columns:370px 160px 160px 160px ;
+    grid-gap:50px;
+    padding:10px 20px;
+}
+
+.library_grid{
+    display: grid;
+    grid-template-columns:160px 160px 160px 160px 160px;
+    grid-gap:50px;
+    padding:10px 20px 50px 20px;
+}
+
+

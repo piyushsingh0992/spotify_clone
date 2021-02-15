@@ -20,7 +20,7 @@ function App() {
 
   useEffect(()=>{
     const hash = getTokenFromResponse();
-    window.location.hash = "";
+    // window.location.hash = "";
     let _token = hash?.access_token;
 
     if(_token){
@@ -62,7 +62,7 @@ function App() {
 
 
 
-
+  console.log("token ->",token);
   return (
     <div className="app">
     {token?<Player/>:<LandingPage spotify={spotify}/>}

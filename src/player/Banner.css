@@ -1,12 +1,13 @@
 .banner{
-    padding:10px;
+    padding:10px 20px 40px;
     display: flex;
 }
 
 .banner >img {
     object-fit:contain;
-    height:220px;
-    margin-right:20px; 
+    height:210px;
+    margin-right:30px; 
+    box-shadow: 4px 8px 10px 1px black;
 }
 
 .banner > div{
@@ -16,10 +17,12 @@
 }
 
 .banner > div >h1{
-    font-size:100px;
+    font-size:85px;
+    margin:7px 0px;
+
 }
 
 .banner > div >p{
-    font-size:25px;
+    font-size:15px;
 
 }

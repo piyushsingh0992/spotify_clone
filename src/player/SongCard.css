@@ -1,26 +1,32 @@
 .songCard{
-    height:240px;
-    background-color: grey;
-    padding:10px;
+    height:230px;
+    background-color: #212121;
+    padding:15px;
     width:160px;
 
-    display: grid;
-    grid-template-rows: 150px 65px;
-    grid-gap:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     color:white;
-
-    
+    transition: all 0.3s ease-in;
+    border-radius: 5px;
 }
-
-.songCard_img{
+.songCard:hover{
+    background-color:#535353
+}
+.songCard_img_container{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-.songCard img{
-    height:150px;
+.songCard_img_container > img{
+    height:160px;
     object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .songCard:hover img{
@@ -30,7 +36,7 @@
 
 .songCard_playbutton{
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     right:10px;
     transform :translateY(20px);
     opacity: 0;
@@ -46,8 +52,13 @@
 
 .songCard_songdetails{
     width:160px;
+    min-height:55px; 
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.songCard p{
+    color:grey;
 }
