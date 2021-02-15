@@ -18,7 +18,7 @@ function SideNav() {
     console.log('playlists ->',playlists)
     return (
         <div className="sideNav">
-            <img src ="./images/spotify-logo-white.png"/>
+            <Link to="/"><img src ="./images/spotify-logo-white.png"/></Link>
 
              <Link to="/"><SideOption  Icon={HomeIcon} title="Home" /></Link>
              <Link to="/search"><SideOption  Icon={SearchIcon} title="Search" /></Link>

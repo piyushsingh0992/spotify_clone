@@ -5,7 +5,8 @@
     padding:10px 0vw;
     color:var(--grey4);
     cursor: pointer;
-    transition: all 0.1s ease-in;
+    transition: all 0.15s ease-in;
+    color:#b3b3b3;
 }
 
 .sideNavOption_icon{
@@ -13,7 +14,7 @@
 }
 
 .sideOption:hover{
-    background-color: grey;
+    background-color: #535353;
     color:white;  
 
 }
