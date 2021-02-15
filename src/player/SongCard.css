@@ -11,6 +11,8 @@
     color:white;
     transition: all 0.3s ease-in;
     border-radius: 5px;
+
+    box-shadow:1px 1px 10px 1px black;
 }
 .songCard:hover{
     background-color:#535353
