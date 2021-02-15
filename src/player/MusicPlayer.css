@@ -38,12 +38,13 @@ display: flex;
 padding:0px 50px;
 display: flex;
 flex-direction: column;
+justify-content: center;
 align-items: center;
 
 }
 
 .musicPlayer_center_controls{
-    margin-top:5px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
