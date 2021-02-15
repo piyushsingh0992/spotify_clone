@@ -1,5 +1,7 @@
 .createPlaylist{
-    padding: 0px 10px;
+
+    background-color: #121212;
+    color:white;
 }
 .createPlaylist_icons{
     display: flex;
@@ -12,5 +14,9 @@
 .createPlaylist_grid{
     display: flex;
     justify-content: space-between;
-    padding:10px 0px;
+    padding:50px 20px ;
+}
+
+.createPlaylist_body{
+    background-color: rgba(0,0,0,0.2);
 }

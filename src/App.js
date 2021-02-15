@@ -20,7 +20,7 @@ function App() {
 
   useEffect(()=>{
     const hash = getTokenFromResponse();
-    // window.location.hash = "";
+    window.location.hash = "";
     let _token = hash?.access_token;
 
     if(_token){

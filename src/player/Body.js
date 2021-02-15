@@ -7,21 +7,16 @@ import Search from "./Search.js";
 import Library from "./Library.js";
 import CreatePlaylist from "./CreatePlaylist.js";
 import LikedSongs from "./LikedSongs.js";
+import { BrowserRouter as Router,Switch, Route, Link } from "react-router-dom";
 function Body() {
     return (
         <div className="body">
-            {/* <Home/> */}
-            {/* <Search/> */}
-
-            {/* <Library/> */}
-            <CreatePlaylist/>
-            {/* <LikedSongs/> */}
-
-            {/* <Playlist/> */}
-            
-            
-            
-
+        <Route path="/" exact component={Home}/>
+        <Route path="/search"  component={Search}/>
+        <Route path="/library"  component={Library}/>
+        <Route path="/createPlaylist"  component={CreatePlaylist}/>
+        <Route path="/likedsongs"  component={LikedSongs}/>
+        <Route path="/playlist"  component={Playlist}/>
         </div>
     )
 }

@@ -18,14 +18,15 @@ function CreatePlaylist() {
         <div className="createPlaylist">
         <Header/>
             <Banner/>
-            <hr/>
-            <br/>
+            <div className="createPlaylist_body">
             <div className="createPlaylist_grid">
+            
             <SongCard/>
             <SongCard/>
             <SongCard/>
             <SongCard/>
             <SongCard/> 
+            </div>
             </div>
             
         </div>

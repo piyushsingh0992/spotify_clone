@@ -9,6 +9,8 @@ import LibraryAddIcon from '@material-ui/icons/LibraryAdd';
 
 import { useStateValue } from "../StateProvider";
 
+import { BrowserRouter as Router,Switch, Route, Link } from "react-router-dom";
+
 
 function SideNav() {
 
@@ -17,13 +19,14 @@ function SideNav() {
     return (
         <div className="sideNav">
             <img src ="./images/spotify-logo-white.png"/>
+
+             <Link to="/"><SideOption  Icon={HomeIcon} title="Home" /></Link>
+             <Link to="/search"><SideOption  Icon={SearchIcon} title="Search" /></Link>
+             <Link to="/library"><SideOption  Icon={LibraryMusicIcon} title="Your Library" /></Link>
+             <br/>
+             <Link to="/createPlaylist"><SideOption  Icon={FavoriteIcon} title="Create Playlist" /></Link>
+             <Link to="/likedsongs"><SideOption  Icon={LibraryAddIcon} title="Liked Songs" /></Link>     
             
-            <SideOption  Icon={HomeIcon} title="Home" />
-            <SideOption  Icon={SearchIcon} title="Search" />
-            <SideOption  Icon={LibraryMusicIcon} title="Your Library" />
-            <br/>
-            <SideOption  Icon={FavoriteIcon} title="Create Playlist" />
-            <SideOption  Icon={LibraryAddIcon} title="Liked Songs" />
             <br/>
             <h3>PLAYLISTS</h3>
             <hr/>

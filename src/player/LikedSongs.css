@@ -1,0 +1,10 @@
+.likedSongs{
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+  background-color: purple;
+  color:white;
+}
+
+.likedSongs_body{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 20px 50px 20px ;
+}
