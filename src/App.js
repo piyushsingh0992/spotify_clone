@@ -32,6 +32,12 @@ function App() {
 
       spotify.getNewReleases().then((newReleases)=>{
                 console.log("newReleases ->",newReleases)
+                dispatch({
+                  type: "SET_NEWTRACKS",
+                  token: _token,
+                });
+
+
               })
 
       dispatch({

@@ -7,6 +7,7 @@ export const initialState = {
     playing: false,
     item: null,
     token:"",
+    newtracks:null,
   };
   
   const reducer = (state, action) => {
@@ -17,6 +18,12 @@ export const initialState = {
           ...state,
           user: action.user,
         };
+
+        case "SET_NEWTRACKS":
+          return {
+            
+            newtracks: action.newtracks,
+          };
   
       case "SET_PLAYING":
         return {
