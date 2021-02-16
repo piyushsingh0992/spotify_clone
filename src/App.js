@@ -31,10 +31,10 @@ function App() {
       })
 
       spotify.getNewReleases().then((newReleases)=>{
-                console.log("newReleases ->",newReleases)
+                console.log("newtracks ->",newtracks)
                 dispatch({
                   type: "SET_NEWTRACKS",
-                  token: _token,
+                  newtracks: newtracks,
                 });
 
 

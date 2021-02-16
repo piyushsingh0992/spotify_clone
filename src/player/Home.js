@@ -4,6 +4,7 @@ import Header from "./Header.js";
 import SongCard from "./SongCard.js";
 
 function Home() {
+
     return (
         <div className="home">
             <Header/>
