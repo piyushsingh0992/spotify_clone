@@ -65,14 +65,9 @@ function App() {
 
 
 
-
-  console.log("token ->",token);
   return (
     <div className="app">
     {token?<Player/>:<LandingPage spotify={spotify}/>}
-    {/* <LandingPage/> */}
-      
-      
     </div>
   );
 }

@@ -15,7 +15,6 @@ import { BrowserRouter as Router,Switch, Route, Link } from "react-router-dom";
 function SideNav() {
 
     const [{ spotify ,playlists}, dispatch] = useStateValue();
-    console.log('playlists ->',playlists)
     return (
         <div className="sideNav">
             <Link to="/"><img src ="./images/spotify-logo-white.png"/></Link>
