@@ -26,6 +26,10 @@ function App() {
     if(_token){
       spotify.setAccessToken(_token);
 
+      spotify.getMyTopTracks().then((tracks)=>{
+        console.log("tracks ->",tracks)
+      })
+
       dispatch({
         type: "SET_TOKEN",
         token: _token,
