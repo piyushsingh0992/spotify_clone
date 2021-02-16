@@ -18,6 +18,12 @@ export const initialState = {
     savedtracks:null,
     savedalbums:null,
 
+
+    //music player
+    currentsong:null,
+
+    //playlistpage
+    currentplaylist:null,
   };
   
   const reducer = (state, action) => {
@@ -94,7 +100,16 @@ export const initialState = {
             ...state,
             savedalbums:action.savedalbums,
           }
-
+        //music player
+        case "SET_CURRENT_SONG":
+          return {
+          ...state,
+          currentsong:currentsong,}
+            
+          case "SET_CURRENT_PLAYLIST":
+            return  {
+              ...state,
+          currentplaylist:currentplaylist}
       default:
         return state;
     }
