@@ -27,7 +27,7 @@ function App() {
       spotify.setAccessToken(_token);
 
       spotify.getMyTopTracks().then((newTracks)=>{
-        console.log("tracks ->",tracks)
+        console.log("new Tracks ->",newTracks)
       })
 
       spotify.getNewReleases().then((newReleases)=>{
