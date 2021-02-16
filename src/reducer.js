@@ -1,54 +1,36 @@
 export const initialState = {
+    // general
     user: null,
-    playlists: [],
-    spotify: null,
-    discover_weekly: null,
-    top_artists: null,
-    playing: false,
-    item: null,
     token:"",
-    newtracks:null,
+    spotify: null,
+    // side nav bar
+    playlists: [],
+
+    // Home page
+
+    usertopartists:null,
+    usertoptracks:null,
+    recentlyplayedtracks:null,
+    featuredplaylists:null,
+    newreleases:null,
+
+    //LIBRARY
+    savedtracks:null,
+    savedalbums:null,
+
   };
   
   const reducer = (state, action) => {
-    console.log(action);
+    // console.log("action ->",action);
     switch (action.type) {
+      // general
       case "SET_USER":
         return {
           ...state,
           user: action.user,
         };
 
-        case "SET_NEWTRACKS":
-          return {
-            
-            newtracks: action.newtracks,
-          };
-  
-      case "SET_PLAYING":
-        return {
-          ...state,
-          playing: action.playing,
-        };
-  
-      case "SET_ITEM":
-        return {
-          ...state,
-          item: action.item,
-        };
-  
-      case "SET_DISCOVER_WEEKLY":
-        return {
-          ...state,
-          discover_weekly: action.discover_weekly,
-        };
-  
-      case "SET_TOP_ARTISTS":
-        return {
-          ...state,
-          top_artists: action.top_artists,
-        };
-  
+
       case "SET_TOKEN":
         return {
           ...state,
@@ -59,13 +41,60 @@ export const initialState = {
         return {
           ...state,
           spotify: action.spotify,
-        };
-  
+        };    
+
+      // side navbar  
       case "SET_PLAYLISTS":
         return {
           ...state,
           playlists: action.playlists,
+        };  
+
+      //home page
+
+      case "SET_USER_TOP_ARTISTS":
+        return {
+          ...state,
+          usertopartists:action.usertopartists,
         };
+      case "SET_USER_TOP_TRACKS":
+        return {
+          ...state,
+          usertoptracks:action.usertoptracks,
+          };
+
+      case "SET_RECENTLY_PLAYED_TRACKS":        
+          return{
+            ...state,
+            recentlyplayedtracks:action.recentlyplayedtracks,
+          };
+
+      case "SET_FEATURED_PLAYLISTS":
+        return {
+          ...state,
+          featuredplaylists:action.featuredplaylists,
+        }
+
+        case "SET_NEW_RELEASES":
+          return {
+            ...state,
+            newreleases:action.newreleases,
+          }
+
+        //library
+
+        case "SET_SAVED_TRACKS":
+          return {
+            ...state,
+            savedtracks:action.savedtracks,
+          }
+
+        case "SET_SAVED_ALBUMS":
+          return {
+            ...state,
+            savedalbums:action.savedalbums,
+          }
+
       default:
         return state;
     }

@@ -14,31 +14,18 @@ const spotify = new SpotifyWebApi();
 function App() {
   // const [{ token,top_artists }, dispatch] = useStateValue();
 
-  const [{ token,user,top_artists }, dispatch] = useStateValue();
+  const [{ token,user,newtracks}, dispatch] = useStateValue();
 
 
 
   useEffect(()=>{
     const hash = getTokenFromResponse();
-    window.location.hash = "";
+    // window.location.hash = "";
     let _token = hash?.access_token;
 
     if(_token){
+      //general
       spotify.setAccessToken(_token);
-
-      spotify.getMyTopTracks().then((newTracks)=>{
-        console.log("new Tracks ->",newTracks)
-      })
-
-      spotify.getNewReleases().then((newReleases)=>{
-                console.log("newtracks ->",newtracks)
-                dispatch({
-                  type: "SET_NEWTRACKS",
-                  newtracks: newtracks,
-                });
-
-
-              })
 
       dispatch({
         type: "SET_TOKEN",
@@ -49,31 +36,64 @@ function App() {
         dispatch({
           type: "SET_USER",
           user,
-        });
-
-      spotify.getMyTopArtists().then((response) =>
-        dispatch({
-          type: "SET_TOP_ARTISTS",
-          top_artists: response,
-        })
-      );
-      });
-
-      spotify.getUserPlaylists().then((playlists) => {
-        dispatch({
-          type: "SET_PLAYLISTS",
-          playlists,
-        });
-      });
+        });});
 
       dispatch({
-        type: "SET_SPOTIFY",
-        spotify: spotify,
-      });
+          type: "SET_SPOTIFY",
+          spotify: spotify,
+        });
+
+      // sidenav bar  
+      spotify.getUserPlaylists().then((playlists) => {
+          dispatch({
+            type: "SET_PLAYLISTS",
+            playlists,
+          });
+        });
+
+      //home
+      spotify.getMyTopArtists().then((usertopartists)=>{
+        dispatch({
+          type: "SET_USER_TOP_ARTISTS",
+          usertopartists:usertopartists,
+        });
+      })
+
+      spotify.getMyTopTracks().then((usertoptracks)=>{
+        dispatch({
+          type: "SET_USER_TOP_TRACKS",
+          usertoptracks:usertoptracks,
+        });
+      })
+
+
+      spotify.getMyRecentlyPlayedTracks().then((recentlyplayedtracks)=>{
+        dispatch({
+          type: "SET_RECENTLY_PLAYED_TRACKS",
+          recentlyplayedtracks:recentlyplayedtracks,
+        });
+      })
+
+      spotify.getFeaturedPlaylists().then((featuredplaylists)=>{
+        dispatch({
+          type: "SET_FEATURED_PLAYLISTS",
+          featuredplaylists:featuredplaylists,
+        });
+
+      })
+
+      spotify.getNewReleases().then((newreleases)=>{
+        dispatch({
+          type: "SET_NEW_RELEASES",
+          newreleases:newreleases,
+        });
+
+      })
+  
+
+
     }
   }, [token, dispatch]);
-
-
 
   return (
     <div className="app">

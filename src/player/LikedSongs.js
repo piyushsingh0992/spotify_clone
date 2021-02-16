@@ -5,7 +5,20 @@ import Banner from "./Banner.js";
 import SongRow from "./SongRow.js";
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 
+import { useStateValue } from "../StateProvider";
+
 function LikedSongs() {
+
+    const [{spotify, playlists }, dispatch] = useStateValue();
+    
+
+    playlists?.items?.map(playlist=>{
+        console.log("playlists.id -> ",playlists);
+        spotify.getPlaylistTracks("3qfSUMYG1O22SvplZ6rglQ").then(tracks=>{
+            console.log(tracks);
+        }).catch("error");
+        // <SongCard audioname={playlist.name} img={playlist.images[0].url}/>    
+    })
     return (
         <div className="likedSongs">
         <Header/>

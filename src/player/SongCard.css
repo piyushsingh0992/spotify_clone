@@ -61,6 +61,10 @@
     justify-content: flex-start;
 }
 
-.songCard p{
+.songCard_artist{
     color:grey;
+}
+
+.songCard_audio{
+    color:white;
 }
