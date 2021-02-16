@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 import "./SupportPage.css";
+import { accessUrl } from "../spotify";
 
 function Support() {
     return (
@@ -77,7 +78,7 @@ function Support() {
         <div className="supportPage_community">
             <h1>Visit the Community</h1>
             <p>Have questions? Find answers from our worldwide Community of expert fans!</p>
-            <a href="">FIND ANSWERS</a>
+            <a href={ accessUrl }>FIND ANSWERS</a>
         </div>
         
         </div>

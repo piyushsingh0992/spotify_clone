@@ -1,5 +1,6 @@
-import React from 'react'
-import "./RateCard.css"
+import React from 'react';
+import "./RateCard.css";
+import { accessUrl } from "../spotify";
 function RateCard(props) {
     return (
         <div className="ratecard">
@@ -22,10 +23,12 @@ function RateCard(props) {
 
                 </ul>
             </div>
-
+                
             <div className="ratecard_bottom">
-                <button><strong>GET STARTED</strong></button>
+            <a href={ accessUrl }>
+                <p><strong>GET STARTED</strong></p></a>
             </div>
+            
                             
 
             

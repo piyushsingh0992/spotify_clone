@@ -1,5 +1,6 @@
 import React from 'react';
 import "./DownloadPage.css";
+import { accessUrl } from "../spotify";
 function DownloadPage() {
     return (
         <div className="downloadPage">
@@ -9,7 +10,7 @@ function DownloadPage() {
                 <img className="downloadPage_spotifylogo" src="./images/spotify-logo.png"/>
                 <h3>Spotify: Music and podcasts</h3>
                 <p>Play millions of songs and podcasts on your desktop for free.</p>
-                <a>DOWNLOAD</a>
+                <a href={ accessUrl }>DOWNLOAD</a>
             </div>
             <img src="./images/download-img1.JPG"/>
         </div>

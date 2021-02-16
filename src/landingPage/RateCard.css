@@ -60,16 +60,20 @@
 
 }
 
-.ratecard_bottom >button{
+.ratecard_bottom a{
     color:white;
     background-color: black;
     font-size:1vw;
     padding:0.5vw 3vw;
     border:1px solid black;
     border-radius: 99px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.ratecard_bottom >button:hover{
+.ratecard_bottom  a:hover{
     background-color: #888888;
     transform: scale(1.1);
 }

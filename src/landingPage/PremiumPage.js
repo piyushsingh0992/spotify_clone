@@ -3,6 +3,8 @@ import RateCard from "./RateCard.js";
 
 import "./PremiumPage.css";
 
+import { accessUrl } from "../spotify";
+
 
 function PremiumPage() {
     return (
@@ -13,10 +15,10 @@ function PremiumPage() {
             <h6> Just $9.99/month after. Cancel anytime.</h6>
             
             <div className="premiumPage_hero_btn_container">
-                <a className="primary">
+                <a className="primary" href={ accessUrl }>
                     GET STARTED
                 </a> 
-                <a className="secondary">
+                <a className="secondary" href={ accessUrl }>
                     VIEW PLANS
                 </a>
             </div>
