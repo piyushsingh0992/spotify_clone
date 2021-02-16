@@ -13,12 +13,20 @@ import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
 import { Slider } from "@material-ui/core";
 
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
+import { useStateValue } from "../StateProvider";
 function Footer() {
     
 
+    const [{ spotify }, dispatch] = useStateValue();
 
+  
+    spotify.play().then(
+        (x)=>{
+            console.log(x);
+        }
+    ).catch('error');
 
-
+    console.log('it worked')
 
     return (
         <div className="musicPlayer">
