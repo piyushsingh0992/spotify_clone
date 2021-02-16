@@ -104,12 +104,12 @@ export const initialState = {
         case "SET_CURRENT_SONG":
           return {
           ...state,
-          currentsong:currentsong,}
+          currentsong:action.currentsong,}
             
           case "SET_CURRENT_PLAYLIST":
             return  {
               ...state,
-          currentplaylist:currentplaylist}
+          currentplaylist:action.currentplaylist}
       default:
         return state;
     }

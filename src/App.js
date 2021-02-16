@@ -12,15 +12,13 @@ const spotify = new SpotifyWebApi();
 
 
 function App() {
-  // const [{ token,top_artists }, dispatch] = useStateValue();
-
   const [{ token,user,newtracks}, dispatch] = useStateValue();
 
 
 
   useEffect(()=>{
     const hash = getTokenFromResponse();
-    // window.location.hash = "";
+    window.location.hash = "";
     let _token = hash?.access_token;
 
     if(_token){
