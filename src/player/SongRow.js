@@ -2,7 +2,7 @@ import React from 'react';
 import "./SongRow.css"
 
 function SongRow({audioName,artistName,audioImg,index,audioAlbum,audioTime}) {
-    let seconds=string(audioTime)
+    let seconds=audioTime;
     console.log(seconds);
     
     return (
