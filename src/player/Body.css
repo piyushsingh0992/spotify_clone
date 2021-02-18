@@ -1,7 +1,8 @@
 .body{
-    /* background-color: red; */
+    
     flex:0.85;
-    overflow: auto;
+    
     height: 87vh;
     padding-bottom: 13vh;
+    overflow: auto;
 }
