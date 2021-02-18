@@ -32,7 +32,7 @@ function Playlist() {
     })
 
 
-    
+    console.log("playlistSongList[0] -> ",playlistSongList[0])
     return (
         <div className="playlist">
             <Header/>
