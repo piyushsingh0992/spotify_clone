@@ -1,6 +1,7 @@
 .likedSongs{
     background: linear-gradient(transparent, rgba(0, 0, 0, 1));
-  background-color: #311f74;
+/*   background-color: #311f74; */
+    background-color: red;
   color:white;
   height: 87vh;
   padding-bottom: 13vh;
