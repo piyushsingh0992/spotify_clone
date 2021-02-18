@@ -3,7 +3,7 @@ import "./SongRow.css"
 
 function SongRow({audioName,artistName,audioImg,index,audioAlbum,audioTime}) {
     let seconds=Math.trunc( audioTime/100000 );
-    console.log(seconds);
+    console.log("seconds -> ",seconds);
     
     return (
         <div className="songRow">
