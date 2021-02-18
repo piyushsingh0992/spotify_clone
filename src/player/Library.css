@@ -1,6 +1,10 @@
 .library{
     padding:10px 0px;
     background-color: #121212;
+    
+    height: 87vh;
+    padding-bottom: 13vh;
+    overflow: auto;
 }
 
 .library_firstrow_banner{
