@@ -1,7 +1,8 @@
 import React from 'react';
 import "./SongRow.css"
 
-function SongRow({audioName,artistName,audioImg,index}) {
+function SongRow({audioName,artistName,audioImg,index,audioAlbum,audioTime}) {
+    let seconds=audioTime/1000
     return (
         <div className="songRow">
             <div className="songRow_left">
@@ -15,10 +16,10 @@ function SongRow({audioName,artistName,audioImg,index}) {
 
 
             <div className="songRow_center">
-                <p>Album Name</p>
+                <p>{audioAlbum}</p>
             </div>
             <div className="songRow_right">
-                <p>time</p>
+                <p>`{seconds} s`</p>
             </div>
             
             

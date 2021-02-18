@@ -43,7 +43,7 @@ function LikedSongs() {
             <br/>
 
             {usertoptracks?.items.slice(0,5).map((track,index)=>{
-                return <SongRow key={index} index={index} audioName={track.album.name} artistName={track.artists[0].name} audioImg={track.album.images[0].url}/>
+                return <SongRow audioAlbum={track.album.name}  audioTime={track.duration_ms}  key={index} index={index} audioName={track.album.name} artistName={track.artists[0].name} audioImg={track.album.images[0].url}/>
             })}
             </div>
             
