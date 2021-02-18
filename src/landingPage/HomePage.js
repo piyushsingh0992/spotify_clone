@@ -20,61 +20,54 @@ function HomePage() {
                 <a href={ accessUrl }>LAUNCH WEB PLAYER</a>
 
                 <div className="homepage_webplayer_musicgrid">
-                    <a href="" className="homepage_webplayer_song">
+                    <a href={ accessUrl } className="homepage_webplayer_song">
                         <div className="homepage_webplayer_song_front">
-                        <img src="images/spotify-logo-white.png"/>
+                        <img src="images/1.jpg"/>
                         </div>
                         <div className="homepage_webplayer_song_back">
-                        <h2>1</h2>
-                        <h2>2</h2>
-                        <h2>3</h2>
+                        
+                        <h2>Play Now</h2>
                         </div>
                     </a>
 
-                    <a href="" className="homepage_webplayer_song">
+                    <a href={ accessUrl } className="homepage_webplayer_song">
                         <div className="homepage_webplayer_song_front">
-                        <img src="images/spotify-logo-white.png"/>
+                        <img src="images/download (1).jpg"/>
                         </div>
                         <div className="homepage_webplayer_song_back">
-                        <h2>1</h2>
-                        <h2>2</h2>
-                        <h2>3</h2>
+                        
+                        <h2>Play Now</h2>
                         </div>
-                    </a><a href="" className="homepage_webplayer_song">
+                    </a><a href={ accessUrl } className="homepage_webplayer_song">
                         <div className="homepage_webplayer_song_front">
-                        <img src="images/spotify-logo-white.png"/>
+                        <img src="images/3.jpg"/>
                         </div>
                         <div className="homepage_webplayer_song_back">
-                        <h2>1</h2>
-                        <h2>2</h2>
-                        <h2>3</h2>
+                        
+                        <h2>Play Now</h2>
                         </div>
-                    </a><a href="" className="homepage_webplayer_song">
+                    </a><a href={ accessUrl } className="homepage_webplayer_song">
                         <div className="homepage_webplayer_song_front">
-                        <img src="images/spotify-logo-white.png"/>
+                        <img src="images/4.jpg"/>
                         </div>
                         <div className="homepage_webplayer_song_back">
-                        <h2>1</h2>
-                        <h2>2</h2>
-                        <h2>3</h2>
+                        
+                        <h2>Play Now</h2>
                         </div>
-                    </a><a href="" className="homepage_webplayer_song">
+                    </a><a href={ accessUrl } className="homepage_webplayer_song">
                         <div className="homepage_webplayer_song_front">
-                        <img src="images/spotify-logo-white.png"/>
+                        <img src="images/5.jpg"/>
                         </div>
                         <div className="homepage_webplayer_song_back">
-                        <h2>1</h2>
-                        <h2>2</h2>
-                        <h2>3</h2>
+                        
+                        <h2>Play Now</h2>
                         </div>
-                    </a><a href="" className="homepage_webplayer_song">
+                    </a><a href={ accessUrl } className="homepage_webplayer_song">
                         <div className="homepage_webplayer_song_front">
-                        <img src="images/spotify-logo-white.png"/>
+                        <img src="images/download.jpg"/>
                         </div>
                         <div className="homepage_webplayer_song_back">
-                        <h2>1</h2>
-                        <h2>2</h2>
-                        <h2>3</h2>
+                        <h2>Play Now</h2>
                         </div>
                     </a>
 
