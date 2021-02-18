@@ -3,6 +3,8 @@
     background: linear-gradient(transparent, rgba(0, 0, 0, 1));
   background-color: grey;
     color:white;
+     height: 87vh;
+    padding-bottom: 13vh;
 }
 .createPlaylist_icons{
     display: flex;
