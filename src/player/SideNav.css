@@ -24,3 +24,7 @@
     color:grey;
     cursor:pointer;
 }
+
+.sideNav_playlist_box{
+    overflow: auto;
+}

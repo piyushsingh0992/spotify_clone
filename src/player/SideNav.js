@@ -29,9 +29,13 @@ function SideNav() {
             <br/>
             <h3>PLAYLISTS</h3>
             <hr/>
+            <div className="sideNav_playlist_box">
             {playlists?.items?.map((playlist,index) => (
             <h5 key={index} className="sideNav_playlist">{playlist.name}</h5> 
+            
+               
       ))}
+      </div>
         </div>
     )
 }
