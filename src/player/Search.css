@@ -1,7 +1,10 @@
 .search{
     background-color: #121212;
     color:white;
-    padding: 10px 0px 20px 0px;
+    height: 87vh;
+    padding-top: 10px; 
+    padding-bottom: 13vh;
+    overflow: auto;
 }
 
 .search >h1{
