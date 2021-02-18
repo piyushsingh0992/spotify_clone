@@ -18,11 +18,13 @@ import SongCard from "./SongCard.js";
 
 function CreatePlaylist() {
 
-    const [{ playlists }, dispatch] = useStateValue();
+    const [{ playlists,user }, dispatch] = useStateValue();
     return (
         <div className="createPlaylist">
         <Header/>
-            <Banner/>
+        <Banner playlistName ="Create Playlist" playlistDescription={user?.display_name} playlistImg="images/create-playlist.JPG"/>
+           
+            
             <div className="createPlaylist_body">
                 <div className="createPlaylist_grid">
                     {playlists?.items?.map(playlist=>{

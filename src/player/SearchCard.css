@@ -1,11 +1,109 @@
 .searchCard{
-    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
-    background-color:rebeccapurple;
+    /* background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color:rebeccapurple; */
     height:170px;
     width: 170px;
     border-radius: 15px;
     border:0px;
     padding: 10px;
+    cursor: pointer;
+
+}
+
+.searchCard:hover{
+    transform: scale(1.05);
+}
 
 
+.one{
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color:red;
+
+    height:170px;
+    width: 170px;
+    border-radius: 15px;
+    border:0px;
+    padding: 10px;
+    cursor: pointer;
+} 
+.one:hover{
+    transform: scale(1.05);
+}
+
+
+.two{
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color:orange;
+
+    height:170px;
+    width: 170px;
+    border-radius: 15px;
+    border:0px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.two:hover{
+    transform: scale(1.05);
+}
+
+.three{
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color:green;
+
+    height:170px;
+    width: 170px;
+    border-radius: 15px;
+    border:0px;
+    padding: 10px;
+    cursor: pointer;
+}
+.three:hover{
+    transform: scale(1.05);
+}
+.four{
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color:purple;
+
+    height:170px;
+    width: 170px;
+    border-radius: 15px;
+    border:0px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.four:hover{
+    transform: scale(1.05);
+}
+.five{
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color:palevioletred;
+
+    height:170px;
+    width: 170px;
+    border-radius: 15px;
+    border:0px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.five:hover{
+    transform: scale(1.05);
+}
+
+.six{
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    background-color:peru;
+
+    height:170px;
+    width: 170px;
+    border-radius: 15px;
+    border:0px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.six:hover{
+    transform: scale(1.05);
 }

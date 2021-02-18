@@ -24,6 +24,8 @@ export const initialState = {
 
     //playlistpage
     currentplaylist:"37i9dQZF1DWWwaxRea1LWS",
+
+    //liked songs page
   };
   
   const reducer = (state, action) => {
@@ -110,6 +112,9 @@ export const initialState = {
             return  {
               ...state,
           currentplaylist:action.currentplaylist}
+
+        //Liked songs
+        
       default:
         return state;
     }

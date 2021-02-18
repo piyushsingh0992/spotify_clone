@@ -9,20 +9,23 @@ import { useStateValue } from "../StateProvider";
 
 function LikedSongs() {
 
-    const [{spotify, playlists }, dispatch] = useStateValue();
-    
+    const [{spotify, playlists,user,usertoptracks }, dispatch] = useStateValue();
 
-    playlists?.items?.map(playlist=>{
-        console.log("playlists.id -> ",playlists);
-        spotify.getPlaylistTracks("3qfSUMYG1O22SvplZ6rglQ").then(tracks=>{
-            console.log(tracks);
-        }).catch("error");
-        // <SongCard audioname={playlist.name} img={playlist.images[0].url}/>    
+    console.log('usertoptracks -> ',usertoptracks);
+    console.log('usertoptracks -> ',usertoptracks);
+    console.log('usertoptracks -> ',usertoptracks);
+    console.log('usertoptracks -> ',usertoptracks);
+    usertoptracks?.items.slice(0,5).map((track,index)=>{
+            console.log("index -> ",index); 
+            console.log("track.album.name -> ", track.album.name); 
+            console.log("track.artists[0].name -> ", track.artists[0].name); 
+            console.log("track.artists[0].name -> ", track.album.images[0].url);
     })
+
     return (
         <div className="likedSongs">
         <Header/>
-            <Banner/>
+            <Banner playlistName ="LIKED SONGS" playlistDescription={user?.display_name} playlistImg="images/likedsongs.jpg"/>
             <div className="likedSongs_body">
             <div className="songRow">
                     <div className="songRow_left">
@@ -38,11 +41,10 @@ function LikedSongs() {
             </div>
             <hr/>
             <br/>
-            <SongRow/>
-            <SongRow/>
-            <SongRow/>
-            <SongRow/>
-            <SongRow/> 
+
+            {usertoptracks?.items.slice(0,5).map((track,index)=>{
+                return <SongRow key={index} index={index} audioName={track.album.name} artistName={track.artists[0].name} audioImg={track.album.images[0].url}/>
+            })}
             </div>
             
         </div>

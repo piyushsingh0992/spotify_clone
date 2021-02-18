@@ -24,27 +24,27 @@ function Home() {
             <div className="home_body">
 
             <h2>Your Top Tracks</h2>
-            <div className="home_card_grid">{usertoptracks?.items.slice(0,5).map(track=>{
-                return     <SongCard audioname={track.album.name} artistname={track.artists[0].name} img={track.album.images[0].url}/>
+            <div className="home_card_grid">{usertoptracks?.items.slice(0,5).map((track,index)=>{
+                return     <SongCard key={index} audioname={track.album.name} artistname={track.artists[0].name} img={track.album.images[0].url}/>
             })} </div>
 
 
             <h2>Recently Played</h2>
-            <div className="home_card_grid">{recentlyplayedtracks?.items.slice(0,5).map(item=>{
-                return <SongCard audioname={item.track.name} artistname={item.track.artists[0].name} img={item.track.album.images[0].url}/>
+            <div className="home_card_grid">{recentlyplayedtracks?.items.slice(0,5).map((item,index)=>{
+                return <SongCard key={index} audioname={item.track.name} artistname={item.track.artists[0].name} img={item.track.album.images[0].url}/>
                     })} </div>
 
 
             <h2>Featured Playlist</h2>
-            <div className="home_card_grid">{featuredplaylists?.playlists.items.slice(0,5).map(item=>{
-                return <SongCard audioname={item.name}  img={item.images[0].url}/>
+            <div className="home_card_grid">{featuredplaylists?.playlists.items.slice(0,5).map((item,index)=>{
+                return <SongCard key={index} audioname={item.name}  img={item.images[0].url}/>
                 })} </div>
 
             <h2>New Releases</h2>
-            <div className="home_card_grid">    {newreleases?.albums.items.slice(0,5).map(item=>{
+            <div className="home_card_grid">    {newreleases?.albums.items.slice(0,5).map((item,index)=>{
 
 
-                return <SongCard audioname={item.name} artistname={item.artists[0].name} img={item.images[0].url}/>
+                return <SongCard key={index} audioname={item.name} artistname={item.artists[0].name} img={item.images[0].url}/>
                 })} </div>
               
             

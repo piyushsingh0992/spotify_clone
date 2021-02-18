@@ -11,7 +11,7 @@ import AccessTimeIcon from '@material-ui/icons/AccessTime';
 
 function Playlist() {
 
-    console.log('you entered the playlist')
+
 
     const [{ spotify ,user,currentplaylist}, dispatch] = useStateValue();
     let[playlistName,playlistNameSetter]=useState('');
@@ -21,20 +21,16 @@ function Playlist() {
     
 
     spotify.getPlaylist(currentplaylist).then(playlist=>{
-        // console.log("playlist ->" ,playlist.name);
+       
         playlistNameSetter(playlist.name);
         playlistDescriptionSetter(playlist.description);
         playlistImgSetter(playlist.images[0].url);
     })
 
     spotify.getPlaylistTracks(currentplaylist).then(tracks=>{
-        console.log("tracks ->" ,tracks.items);
         playlistImgSongListSetter(tracks.items)
     })
 
-    // spotify.getPlaylistCoverImage(currentplaylist).then(img=>{
-    //     console.log("img ->" ,img)
-    // })
 
     
     return (

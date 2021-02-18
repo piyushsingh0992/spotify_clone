@@ -1,6 +1,7 @@
 .createPlaylist{
 
-    background-color: #121212;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+  background-color: grey;
     color:white;
 }
 .createPlaylist_icons{

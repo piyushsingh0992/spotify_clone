@@ -29,8 +29,8 @@ function SideNav() {
             <br/>
             <h3>PLAYLISTS</h3>
             <hr/>
-            {playlists?.items?.map((playlist) => (
-            <h5 className="sideNav_playlist">{playlist.name}</h5> 
+            {playlists?.items?.map((playlist,index) => (
+            <h5 key={index} className="sideNav_playlist">{playlist.name}</h5> 
       ))}
         </div>
     )

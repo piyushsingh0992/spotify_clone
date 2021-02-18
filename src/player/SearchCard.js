@@ -1,10 +1,11 @@
 import React from 'react'
 import "./SearchCard.css";
-function SearchCard() {
+function SearchCard({classNumber,text}) {
+    let color=['one','two','three','four','five','six']
 
     return (
-        <div className="searchCard">
-        <h2>Rock</h2>
+        <div className={color[classNumber]}   >
+        <h2>{text}</h2>
         </div>
     )
 }
