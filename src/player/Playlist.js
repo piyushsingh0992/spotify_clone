@@ -62,7 +62,7 @@ function Playlist() {
             <hr/>
             <br/>
             {playlistSongList.map((song,index)=>{
-                return <SongRow index={index} audioName={song.name} artistName={song.track.artists[0].name}
+                return <SongRow index={index} audioName={song.track.name} artistName={song.track.artists[0].name}
                     audioImg={song.track.album.images[0].url}
                 />
             })}
