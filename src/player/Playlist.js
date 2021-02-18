@@ -32,7 +32,8 @@ function Playlist() {
     })
 
 
-    console.log("playlistSongList[0] -> ",playlistSongList[0])
+    console.log("playlistSongList[0].track.album.name -> ",playlistSongList[0]?.track.album.name)
+    console.log("playlistSongList[0].track.duration_ms -> ",playlistSongList[0]?.track.duration_ms)
     return (
         <div className="playlist">
             <Header/>
