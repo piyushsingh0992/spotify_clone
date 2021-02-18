@@ -1,17 +1,19 @@
 import React from 'react';
 import "./SongRow.css"
 
-function SongRow() {
+function SongRow({audioName,artistName,audioImg,index}) {
     return (
         <div className="songRow">
             <div className="songRow_left">
-                <span className="songRow_highlight">1</span>
-                <img className="songRow_img"src="./images/album-art.JPG"/>
+                <span className="songRow_highlight">{index+1}</span>
+                <img className="songRow_img" src={audioImg}/>
                 <div>
-                    <span className="songRow_highlight">title</span>
-                    <p>discription</p>
+                    <span className="songRow_highlight">{audioName}</span>
+                    <p>{artistName}</p>
                 </div>
             </div>
+
+
             <div className="songRow_center">
                 <p>Album Name</p>
             </div>

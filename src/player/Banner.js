@@ -3,15 +3,15 @@ import "./Banner.css";
 
 
 
-function Banner() {
+function Banner({playlistName,playlistDescription,playlistImg}) {
     return (
         <div className="banner">
             
-            <img src="./images/album-art.JPG"/>
+            <img src={playlistImg}/>
             <div>
                 <p>PLAYLIST</p>
-                <h1>My Playlist #5</h1>
-                <p>VAIBHAV</p>
+                <h1>{playlistName}</h1>
+                <p>{playlistDescription}</p>
             </div>
         </div>
     )

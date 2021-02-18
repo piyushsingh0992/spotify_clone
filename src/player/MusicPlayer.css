@@ -26,10 +26,22 @@ display: flex;
 
 }
 
-.musicPlayer_left >div{
+.musicPlayer_songdetails{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    min-width: 150px;
+}
+
+.musicPlayer_audioname{
+    color:white;
+    font-size: 12px;
+    margin:1px;
+}
+.musicPlayer_artistname{
+    color:grey;
+    font-size: 12px;
+    margin:1px;
 }
 
 

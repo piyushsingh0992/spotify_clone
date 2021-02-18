@@ -23,7 +23,7 @@ export const initialState = {
     currentsong:null,
 
     //playlistpage
-    currentplaylist:null,
+    currentplaylist:"37i9dQZF1DWWwaxRea1LWS",
   };
   
   const reducer = (state, action) => {

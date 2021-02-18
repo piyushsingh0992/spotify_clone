@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./Playlist.css";
 import Header from "./Header.js";
 import Banner from "./Banner.js";
@@ -11,13 +11,36 @@ import AccessTimeIcon from '@material-ui/icons/AccessTime';
 
 function Playlist() {
 
-    const [{ spotify ,user}, dispatch] = useStateValue();
+    console.log('you entered the playlist')
+
+    const [{ spotify ,user,currentplaylist}, dispatch] = useStateValue();
+    let[playlistName,playlistNameSetter]=useState('');
+    let[playlistDescription,playlistDescriptionSetter]=useState('');
+    let[playlistImg,playlistImgSetter]=useState(null);
+    let[playlistSongList,playlistImgSongListSetter]=useState([]);
+    
+
+    spotify.getPlaylist(currentplaylist).then(playlist=>{
+        // console.log("playlist ->" ,playlist.name);
+        playlistNameSetter(playlist.name);
+        playlistDescriptionSetter(playlist.description);
+        playlistImgSetter(playlist.images[0].url);
+    })
+
+    spotify.getPlaylistTracks(currentplaylist).then(tracks=>{
+        console.log("tracks ->" ,tracks.items);
+        playlistImgSongListSetter(tracks.items)
+    })
+
+    // spotify.getPlaylistCoverImage(currentplaylist).then(img=>{
+    //     console.log("img ->" ,img)
+    // })
 
     
     return (
         <div className="playlist">
             <Header/>
-            <Banner/>
+            <Banner playlistName={playlistName} playlistDescription={playlistDescription} playlistImg={playlistImg}/>
             <div className="playlist_body">
             <div className="playlist_icons"><PlayCircleFilledIcon style={{fontSize:"70px",color:"#1db954"}}/> <FavoriteIcon style={{fontSize:"40px",color:"#1db954"}} />
             
@@ -38,11 +61,12 @@ function Playlist() {
 
             <hr/>
             <br/>
-            <SongRow/>
-            <SongRow/>
-            <SongRow/>
-            <SongRow/>
-            <SongRow/>
+            {playlistSongList.map((song,index)=>{
+                return <SongRow index={index} audioName={song.name} artistName={song.track.artists[0].name}
+                    audioImg={song.track.album.images[0].url}
+                />
+            })}
+
             </div>
             </div>
         </div>

@@ -5,9 +5,15 @@ import SongCard from "./SongCard.js";
 import { useStateValue } from "../StateProvider";
 
 function Home() {
-    const [{ usertoptracks,recentlyplayedtracks,featuredplaylists,newreleases }, dispatch] = useStateValue();
+    const [{ spotify,usertoptracks,recentlyplayedtracks,featuredplaylists,newreleases }, dispatch] = useStateValue();
 
-  
+        spotify.getTrack("5I3Xih0C2ID3fqngBrBbGv").then((currentsong)=>{
+            dispatch({
+                type: "SET_CURRENT_SONG",
+                currentsong: currentsong,
+              });
+
+        })
 
     return (
 

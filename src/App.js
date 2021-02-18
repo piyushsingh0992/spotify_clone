@@ -58,6 +58,7 @@ function App() {
       })
 
       spotify.getMyTopTracks().then((usertoptracks)=>{
+        console.log('x ->',usertoptracks )
         dispatch({
           type: "SET_USER_TOP_TRACKS",
           usertoptracks:usertoptracks,
@@ -73,6 +74,7 @@ function App() {
       })
 
       spotify.getFeaturedPlaylists().then((featuredplaylists)=>{
+        console.log("featuredplaylists -> ",featuredplaylists);
         dispatch({
           type: "SET_FEATURED_PLAYLISTS",
           featuredplaylists:featuredplaylists,

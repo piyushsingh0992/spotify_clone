@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useEffect}from 'react';
 import "./MusicPlayer.css";
 
 
@@ -17,17 +17,17 @@ import { useStateValue } from "../StateProvider";
 function Footer() {
     
 
-    const [{ spotify }, dispatch] = useStateValue();
+    const [{ spotify,currentsong }, dispatch] = useStateValue();
 
     return (
         <div className="musicPlayer">
         
             
             <div className="musicPlayer_left">
-                <img src="./images/album-art.JPG"/>
+                <img src={currentsong?.album.images[0].url}/>
                 <div className="musicPlayer_songdetails">
-                    <h3>title</h3>
-                    <p>discription</p>
+                    <p className="musicPlayer_audioname">{currentsong?.album.name}</p>
+                    <p className="musicPlayer_artistname">{currentsong?.artists[0].name}</p>
                 </div>
             </div> 
 
